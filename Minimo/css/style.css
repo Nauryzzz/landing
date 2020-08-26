@@ -61,6 +61,7 @@ body {
 
 .photodiary {
     margin-top: 95px;
+    margin-bottom: 120px;
 }
 
 .textdecor-label {
@@ -85,9 +86,141 @@ body {
 
 .photodiary-comment {
     margin-top: 50px;
-    color: #b4ad9e;
     font-family: Ubuntu;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;   
+}
+
+.photodiary-comment a {
+    text-decoration: none;
+    color: #b4ad9e;
+}
+
+.cards__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards__item {
+    width: 420px;
+    margin-bottom: 120px;
+}
+
+.cards__img {
+    width: 420px;
+    height: 280px;
+    margin-bottom: 28px;
+}
+
+.cards__pic {
+    width: 100%;
+    height: 100%;
+}
+
+.send {
+    background-color: #f0f0f0;
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.send__title {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    margin-bottom: 80px;
+}
+
+.send__email {
+    width: 400px;
+    padding-bottom: 13px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    outline: 0;
+    padding-right: 32px;
+}
+
+.send__email::placeholder {
+    color: #626262;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Playfair Display";
+}
+
+.send__wrap {
+    position: relative;
+}
+
+.send__btn {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 32px;
+    height: 17px;
+    background: url("/img/send_icon.png") no-repeat;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.send__btn:hover {
+    right: -3px    
+}
+
+.lifestyle-cards {
+    margin-bottom: 150px;
+}
+
+.load-more {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.more {
+    padding: 18px 33px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    border: 2px solid #626262;
+}
+
+.footer {
+    background-color: #f0f0f0;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+.footer__socials span {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+.footer__socials img {
+    margin-right: 10px;    
 }
