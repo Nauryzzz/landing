@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	background-color: #eaeaea;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+}
+
+.center {
+	text-align: center;
+}
+
+.header__pic {
+	width: 100%;
+	height: auto;
+}
+
+.header__inner {
+	display: flex;
+	padding-top: 36px;
+	padding-bottom: 39px;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.menu {
+	font-family: Montserrat;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__item {
+	padding-left: 22px;
+	margin-left: 22px;
+	position: relative;
+}
+
+.menu__item:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.menu__item::before {
+	content: '';
+	width: 2px;
+	height: 100%;
+	background-color: #494949;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.menu__item:first-child::before {
+	display: none;
+}
+
+.menu__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #494949;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.intro {
+	background: url("../img/intro-bg.jpg") center no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding-top: 255px;
+	padding-bottom: 285px;
+}
+
+.intro__info {
+	width: 600px;
+}
+
+.intro__title {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.intro__text {
+	font-family: Roboto;
+	min-width: 570px;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 26px;
+}
+
+.intro__btn {
+	display: block;
+	width: 190px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	padding: 18px;
+	text-align: center;
+}
+
+.intro__img {
+	position: absolute;
+	right: 0;
+	top: -230px;
+}
+
+.create {
+	padding-top: 122px;
+}
+.page-title {
+	color: #282828;
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	padding: 0 127px 0 127px;
+	margin-bottom: 20px;
+}
+
+.page-title::before, .page-title::after {
+	content: '';
+	position: absolute;
+	background-image: url(../img/shape.png);
+	display: block;
+	width: 102px;
+	height: 28px;
+	top: calc(50% - 14px);
+}
+
+.page-title::before {
+	left: 0;
+}
+
+.page-title::after {
+	right: 0;
+}
+
+.page-text {
+	color: #959595;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.create__menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 42px;
+}
+
+.create__item {
+	padding-left: 20px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.create__link {
+	text-decoration: none;
+	color: #494848;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 18px;
+}
+
+.create__item:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.create__item::before {
+	content: '';
+	width: 3px;
+	height: 100%;
+	background-color: #494848;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.create__item:first-child::before {
+	display: none;
+}
+
+.create__link.active {
+	border-bottom: 4px solid #ee252d;
+	position: relative;
+}
+
+.create__link.active::before {
+	content: '';
+	width: 0;
+	height: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;	
+	position: absolute;
+	border: 7px solid transparent;
+	border-bottom: 7px solid #ee252d;
+}
+
+.create__box {
+	display: flex;
+	background-color: #fff;
+	padding-top: 80px;
+	padding-bottom: 57px;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+	margin-bottom: 70px;
+}
+
+.box__item {
+	padding-left: 55px;
+	box-sizing: content-box;
+}
+
+.box__bumber {
+	color: #282828;
+	font-family: "Roboto";
+	font-size: 120px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 48px;
+	position: relative;
+}
+
+.box__bumber:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+}
+
+.number-one:after {
+	background: url("../img/pizza-create.png") center no-repeat;
+	width: 126px;
+	height: 71px;
+	left: 67px;
+	top: calc(50% - 35.5px);
+}
+
+.number-two:after {
+	background: url("../img/logo-create.png") center no-repeat;
+	width: 184px;
+	height: 81px;
+	left: 86px;
+	top: calc(50% - 40.5px);
+}
+
+.number-three:after {
+	background: url("../img/social-create.png") center no-repeat;
+	width: 142px;
+	height: 68px;
+	left: 94px;
+	top: calc(50% - 34px);
+}
+
+.box__title {
+	color: #282828;
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+}
+
+.box__text {
+	color: #282828;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.box__info {
+	border-right: 2px solid #eaeaea;
+}
+
+.create-btn {
+	display: inline-block;
+	background: url("../img/btn-create.png") center no-repeat;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	padding: 36px 58px;
+	margin-bottom: 94px;
+}
+
+.footer {
+	background: url("../img/footer-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding: 46px 0;
+	text-align: center;
+	color: #eaeaea;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
