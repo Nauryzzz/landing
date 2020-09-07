@@ -332,6 +332,10 @@ body {
 	text-align: center;
 }
 
+.about {
+	margin-bottom: 120px;
+}
+
 .about__inner {
 	display: flex;
 	max-width: 1090px;
@@ -372,4 +376,284 @@ body {
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+.reviews {
+	background: #332F30 url("../img/reviews-bg.png") center no-repeat;
+	background-size: cover;
+	padding: 68px 0;
+	position: relative;
+	margin-bottom: 145px;
+}
+
+.reviews__item {
+	width: 100%;
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+.reviews__text {
+	font-size: 14px;
+	color: #fff;
+	line-height: 32px;
+	text-align: center;
+}
+
+.reviews__photo {
+	display: block;
+	margin: 0 auto 9px;
+	width: 103px;
+	height: 103px;
+	border-radius: 50%;
+	border: 4px solid #EFEFEF;
+}
+
+.reviews__author {
+	width: 100%;
+	margin-top: -51px;
+	top: 100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.reviews__name {
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.reviews__company {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 300;
+	color: #717072;
+	margin-bottom: 7px;
+}
+
+.reviews__star {
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+}
+
+.reviews__star.reviews__star--unactive {
+	opacity: 0.5;
+}
+
+.posts {
+	margin-bottom: 150px;
+}
+
+.posts__header {
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.posts__title {
+	font-size: 45px;
+	font-weight: 700;
+	color: #2B2A2C;
+	text-transform: uppercase;
+}
+
+.posts__subtitle {
+	font-size: 18px;
+	color: #717072;
+	font-weight: 300;
+}
+
+.posts__inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.posts__col{
+	width: 33.333%;
+	padding: 0 15px;
+	margin-bottom: 25px;
+}
+
+.posts__img {
+	position: relative;
+}
+
+.posts__date {
+	display: flex;
+	font-size: 16px;
+	color: #fff;
+	width: 77px;
+	height: 77px;
+	background-color: #2B2A2C;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.posts__img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.posts__img {
+	margin-bottom: 10px;
+}
+
+.posts__item-title {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 7px;
+}
+
+.posts__item-title a {
+	color: #000;
+	text-decoration: none;
+}
+
+.posts__item-category {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.posts__item-text {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.posts__footer {
+	text-align: right;
+}
+
+.posts__footer a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #717072;
+}
+
+.posts__footer a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	background-color: #2B2A2C;
+	color: #8D8D8E;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 63px;
+}
+
+.footer__link {
+	color: #8D8D8E;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: none;
+	margin-right: 15px;
+}
+
+.footer__link--btn {
+	padding: 5px 22px;
+	border-radius: 20px;
+	border: 1px solid #8D8D8E;
+	margin-right: 0;
+	text-transform: uppercase;
+}
+
+.footer__link--btn:hover {
+	background-color: #8D8D8E;
+}
+
+.footer__link:hover {
+	color: #fff;
+}
+
+.footer__info {
+	padding-right: 10px;
+	border-right: 2px solid #555;
+}
+
+.modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+body.no-scroll {
+	overflow: hidden;
+}
+
+.modal__dialog {
+	width: 100%;
+	max-width: 1200px;
+	background-color: #fff;
+}
+
+.modal-work {
+	display: flex;
+}
+
+.modal-work__previews {
+	width: 65%;
+	position: relative;
+	overflow: hidden;
+}
+
+.modal-work__content {
+	width: 35%;
+	padding-top: 50px;
+	padding-left: 26px;
+	padding-right: 100px;
+	padding-bottom: 168px;
+}
+
+.modal-work__photo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__title {
+	font-size: 34px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.modal-work__info {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #8D8D8E;
+}
+
+.modal-work__info span {
+	margin: 0 15px;
+}
+
+.modal-work__header {
+	margin-bottom: 30px;
 }
