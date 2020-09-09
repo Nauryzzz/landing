@@ -328,6 +328,14 @@ body {
 	padding: 10px 15px;
 }
 
+.btn--thin {
+	min-width: 145px;
+	font-size: 12px;
+	padding: 10px 15px;
+	border: 1px solid #2b2a2c;
+}
+
+
 .text-center {
 	text-align: center;
 }
@@ -726,6 +734,11 @@ body.no-scroll {
 	padding: 0;
 	font-family: inherit;
 	cursor: pointer;
+	outline: none;
+}
+
+.modal-work__btn:hover {
+	color: #8D8D8E;
 }
 
 .modal-work__btn--prev {
@@ -736,4 +749,127 @@ body.no-scroll {
 .modal-work__btn--next {
 	padding-right: 20px;
 	background: url("../img/next.svg") right center no-repeat;
+}
+
+
+.modal__content {
+	padding: 75px 15px;
+}
+
+.modal__title {
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 54px;
+}
+
+.timeline {
+	margin: 63px auto;
+	display: flex;
+	width: 100%;
+	max-width: 768px;
+	position: relative;
+}
+
+.timeline:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: #000;
+	top: 0;
+	left: 50%;
+	z-index: 1;
+}
+
+.timeline__col {
+	width: 50%;
+}
+
+.timeline__title {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 38px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.timeline__title--left {
+	padding-right: 48px;
+	text-align: right;
+}
+
+.timeline__title--right {
+	padding-left: 48px;
+}
+
+.timeline__item {
+	margin-bottom: 38px;
+}
+
+.timeline__item:last-child {
+	margin-bottom: 0;
+}
+
+.timeline__period {
+	text-decoration: underline;
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+.timeline__period span  {
+	font-weight: 700;
+}
+
+.timeline__prof {
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 3px;
+	font-weight: 700;	
+}
+
+.timeline__pos {
+	font-size: 14px;
+	font-style: italic;
+	color: #000;
+}
+
+.timeline__text {
+	margin-top: 15px;
+	font-size: 12px;
+	color: #8D8D8E;
+	font-weight: 300;
+	line-height: 18px;
+}
+
+.progress-bar__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.progress-bar {
+	margin-bottom: 50px;
+}
+
+.progress-bar__right {
+	padding-left: 15px;
+}
+
+.progress-bar__bar {
+	width: 139px;
+	height: 6px;
+	background-color: #999;
+}
+
+.progress-bar-progress {
+	height: 100%;
+	background-color: #333;
+	width: 50%;
 }
