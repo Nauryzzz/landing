@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,200;1,300&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-<body class="no-scroll">
+<body>
     <header class="header">
         <div class="wrap">
             <div class="header__inner">
@@ -68,20 +68,21 @@
     <div class="works">
         <div class="wrap">
             <div class="works__nav">
-                <a class="works__nav-link" href="#!">All</a>
-                <a class="works__nav-link" href="#!">App</a>
-                <a class="works__nav-link" href="#!">Website</a>
-                <a class="works__nav-link" href="#!">Interaction</a>
+                <a class="works__nav-link" data-link="all" id="filer_all" href="#!">All</a>
+                <a class="works__nav-link" data-link="app" id="filer_app" href="#!">App</a>
+                <a class="works__nav-link" data-link="website" id="filer_website" href="#!">Website</a>
+                <a class="works__nav-link" data-link="interaction" id="filer_interaction" href="#!">Interaction</a>
             </div>
 
             <div class="portfolio">
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="website">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: website
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -94,13 +95,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="app">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: app
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -113,13 +115,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="website">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: website
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -132,13 +135,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: interaction
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -151,13 +155,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="app">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: app
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -170,13 +175,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="website">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: website
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -189,13 +195,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: interaction
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -208,13 +215,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="app">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: app
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -227,13 +235,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+
+                <div class="portfolio__col" data-cat="website">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
                         <div class="portfolio__content">
                             <div class="portfolio__project-category">
-                                CATEGORY
+                                CATEGORY: website
                             </div>
                             <div class="portfolio__project-title">
                                 <div class="portfolio__project-title__caption">
@@ -441,14 +450,14 @@
         </div> <!-- /modal__dialog -->
     </div>
 
-    <div class="modal">
+    <div class="modal" style="display: none;">
         <div class="modal__dialog">
             <button class="modal__close" type="button">
                 <img src="img/close.svg" alt="close">
             </button>
 
             <div class="modal__content">
-                <h3 class="modal__title">resume</h3>
+                <h3 class="modal__title text-center">resume</h3>
 
                 <div class="text-center">
                     <a class="link__btn btn--thin" href="#!">download pdf</a>
@@ -574,6 +583,47 @@
 
         </div> <!-- /modal__dialog -->
     </div>    
+
+    <div class="modal" style="display: none;">
+        <div class="modal__dialog modal__dialog--sm">
+            <button class="modal__close" type="button">
+                <img src="img/close.svg" alt="close">
+            </button>
+            
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">let's talk</h3>
+                    <h4 class="modal__subtitle">call me or send me a request</h4>
+                    <ul class="contact__info">
+                        <li class="contact__tel">
+                            <img src="img/phone.svg" alt="" style="width: 16px;">
+                            +7 777 452 99 - 49
+                        </li>
+                        <li class="contact__email">
+                            <img src="img/email.svg" alt="" style="width: 16px;">
+                            Nauryzzz@inbox.ru
+                        </li>
+                    </ul>
+
+                    <form action="POST">
+                        <div class="form__group">
+                            <label class="label" for="input_email">Address email</label>
+                            <input id="input_email" class="input" type="text" placeholder="Address email">
+                        </div>
+                        <div class="form__group">
+                            <label class="label" for="input_request">Request</label>
+                            <textarea id="input_request" class="textarea" placeholder="Type yout request..."></textarea>
+                        </div>
+                        <div class="text-right">
+                            <a class="link__btn" href="#!">SEND</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__right"></div>
+            </div>
+
+        </div> <!-- /modal__dialog -->
+    </div>
     <!-- / Modals -->
 
     <script src="js/main.js"></script>
