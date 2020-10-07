@@ -597,7 +597,7 @@ body.no-scroll {
 }
 
 .modal {
-	display: flex;
+	display: none;
 	padding: 15px;
 
 	width: 100%;
@@ -610,6 +610,10 @@ body.no-scroll {
 	z-index: 1000;
 
 	overflow: auto;
+}
+
+.modal.show {
+	display: flex;
 }
 
 .modal__dialog {
@@ -705,10 +709,14 @@ body.no-scroll {
 	padding: 0;
 	background: none;
 	border: 0;
-	cursor: pointer;
 	outline: none;
+	cursor: pointer;
 
 	transition: transform .2s linear;
+}
+
+.modal__close img {
+	cursor: pointer;
 }
 
 .modal__close:hover {
@@ -952,4 +960,63 @@ body.no-scroll {
 
 .hide__category {
 	display: none;
+}
+
+.burger {
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+.burger__icon {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 565px) {
+	.portfolio__col {
+		flex-basis: 100%;	
+	}
+	.intro__photo {
+		display: none;
+	}
+	.intro__inner {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.nav {
+		display: none;
+	}
+	.burger {
+		display: block;
+	}
+	.portfolio__col {
+		flex-basis: 50%;	
+	}
+}
+
+@media (max-width: 991px) {
+	.intro__photo {
+		width: 300px;
+		height: auto;
+	}
+	.intro__inner {
+		padding-top: 60px;
+		padding-bottom: 80px;
+		background-size: 415px auto;
+	}
+	.intro__subtitle {
+		font-size: 27px;
+	}
+	.intro__title {
+		font-size: 35px;
+	}
+	.intro__btns .link__btn {
+		font-size: 14px;
+		min-width: 100px;
+		margin-right: 10px;
+	}
 }

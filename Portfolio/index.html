@@ -26,8 +26,12 @@
                      <a class="nav__link" href="#">ABOUT ME</a>
                      <a class="nav__link" href="#">BLOG</a>
                      <a class="nav__link" href="#">CONTACT</a>
-                     <a class="nav__link nav__link--btn" href="#">HIRE ME</a>
+                     <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
                  </nav>
+
+                 <div class="burger">
+                     <img class="burger__icon" src="img/burger.svg" alt="">
+                 </div>
             </div>
         </div>
     </header>
@@ -55,8 +59,8 @@
                     </div>
 
                     <div class="intro__btns">
-                        <a class="link__btn" href="#!">hire me</a>
-                        <a class="link__btn" href="#!">see my resume</a>                        
+                        <a class="link__btn" href="#!" data-modal="#modal_hire_me">hire me</a>
+                        <a class="link__btn" href="#!" data-modal="#modal_resume">see my resume</a>                        
                     </div>
                 </div>
 
@@ -76,7 +80,7 @@
 
             <div class="portfolio">
 
-                <div class="portfolio__col" data-cat="website">
+                <div class="portfolio__col" data-cat="website" data-modal="#modal_project_1">
                     <div class="portfolio__item">
                         <img class="portfolio__item-img" src="http://placehold.it/370x300" alt="">
 
@@ -281,8 +285,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis. Nunc ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc consequat velit, in mollis erat nibh in libero.
                     </p>
 
-                    <a href="#!" class="link__btn">HIRE ME</a>
-                    <a href="#!" class="link__btn">SEE MY RESUME </a>
+                    <a href="#!" class="link__btn" data-modal="#modal_hire_me">HIRE ME</a>
+                    <a href="#!" class="link__btn" data-modal="#modal_resume">SEE MY RESUME</a>
                 </div>
             </div>
         </div>
@@ -402,21 +406,37 @@
                     <a class="footer__link" href="#">About me</a>
                     <a class="footer__link" href="#">Blog</a>
                     <a class="footer__link" href="#">Contact</a>
-                    <a class="footer__link footer__link--btn" href="#">Hire me</a>
+                    <a class="footer__link footer__link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
                 </nav>                
             </div>
         </div>
     </footer>
 
     <!-- Modals -->
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_project_1">
         <div class="modal__dialog">
             <button class="modal__close" type="button">
                 <img src="img/close.svg" alt="close">
             </button>
             <div class="modal-work">
                 <div class="modal-work__previews">
-                    <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    <div id="works_slider">
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/444" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/555" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/303" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/133" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="modal-work__content">
@@ -450,7 +470,7 @@
         </div> <!-- /modal__dialog -->
     </div>
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_resume">
         <div class="modal__dialog">
             <button class="modal__close" type="button">
                 <img src="img/close.svg" alt="close">
@@ -577,14 +597,14 @@
                 </div>
 
                 <div class="text-center">
-                    <a class="link__btn" href="#!">hire me</a>
+                    <a class="link__btn" href="#!" data-modal="#modal_hire_me">hire me</a>
                 </div>
             </div>
 
         </div> <!-- /modal__dialog -->
     </div>    
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_hire_me">
         <div class="modal__dialog modal__dialog--sm">
             <button class="modal__close" type="button">
                 <img src="img/close.svg" alt="close">
@@ -626,6 +646,8 @@
     </div>
     <!-- / Modals -->
 
+    <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
     <script src="js/main.js"></script>
 </body>
 </html>
